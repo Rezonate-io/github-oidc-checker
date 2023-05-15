@@ -17,9 +17,9 @@ You should run them as an authenticated user and have the following dependencies
 
 
 **GCP**
-![Example](github-aws-example.png)
-
-![Example 1]([https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true](github-aws-example.png))
+Below is example for the tool execution on GCP Project
+![Example](github-gcp-example.png)
 
 **AWS**
-![Example 1]([https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true](github-aws-example.png))
+Below is example for the tool execution in the context of AWS account
+![Example](github-aws-example.png)
