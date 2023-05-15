@@ -47,11 +47,11 @@ try:
         print("GitHub OIDC trust was not detected.")
         exit(0)
     else:
-        print("Found OIDC Trust for GitHub. searching for relevant roles")
+        print("Found OIDC trust for GitHub. Searching for relevant roles")
 
 
 except NoCredentialsError:
-    print("Missing AWS credentials. please ensure that the script runs from authenticated terminal")
+    print("Missing AWS credentials. Please ensure that the script runs from authenticated terminal")
     exit(0)
 
 roles = get_roles_paginated(iam_client)
@@ -74,16 +74,16 @@ for role in roles:
                 github_roles.append(role)
 
 if len(github_roles) == 0:
-    print("There are no roles that trusts GitHub OIDC")
+    print("There are no roles that trust GitHub OIDC")
     exit(0)
 
 found_vuln = False
 vuln_no_sub = []
 vuln_loosy_sub = []
 
-print(f"Found {len(github_roles)} roles that trusts GitHub OIDC. checking them")
+print(f"Found {len(github_roles)} roles that trust GitHub OIDC. evaluating them")
 for role in github_roles:
-    print(f"Checking {role['RoleName']} , {role['Arn']}")
+    print(f"Evaluating  {role['RoleName']} , {role['Arn']}")
     statements = role["AssumeRolePolicyDocument"]["Statement"]
     for statement in statements:
         if statement["Effect"] != "Allow":
@@ -107,13 +107,13 @@ if not found_vuln:
 print("-------------------------\nFound Vulnerable roles!\n--------------------------")
 
 if len(vuln_no_sub) > 0:
-    print("Vulnerable Missing Subject:")
+    print("Vulnerable to Missing Subject:")
     for role in vuln_no_sub:
         print(f"[!]{role['Arn']}")
 
 
 if len(vuln_loosy_sub) > 0:
-    print("Vulnerable Bypassable Subject:")
+    print("Vulnerable to Bypassable Subject:")
     for role in vuln_loosy_sub:
         print(f"[!]{role['Arn']}")
 
