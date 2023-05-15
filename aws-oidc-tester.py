@@ -101,7 +101,7 @@ for role in github_roles:
         
 
 if not found_vuln:
-    print("\n-------------------------No Vulnerable roles detected.\n-------------------------")
+    print("\n-------------------------\nNo Vulnerable roles detected.\n-------------------------")
     exit(0)
 
 print("-------------------------\nFound Vulnerable roles!\n--------------------------")
