@@ -15,8 +15,9 @@ You should run them as an authenticated user and have the following dependencies
 
 ## Execution Examples
 
+
 **GCP**
-![Example 1]([https://raw.githubusercontent.com/Rezonate-io/github-oidc-checker/main/github-gcp-example.png](https://raw.githubusercontent.com/Rezonate-io/github-oidc-checker/main/github-gcp-example.png))
+![Example 1]([https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true](github-aws-example.png))
 
 **AWS**
-![Example 1]([https://raw.githubusercontent.com/Rezonate-io/github-oidc-checker/main/github-aws-example.png](https://raw.githubusercontent.com/Rezonate-io/github-oidc-checker/main/github-aws-example.png))
+![Example 1]([https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true](github-aws-example.png))
