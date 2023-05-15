@@ -17,6 +17,8 @@ You should run them as an authenticated user and have the following dependencies
 
 
 **GCP**
+![Example](github-aws-example.png)
+
 ![Example 1]([https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true](github-aws-example.png))
 
 **AWS**
