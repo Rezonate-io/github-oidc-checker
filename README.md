@@ -10,7 +10,9 @@ As part of their research on GitHub OIDC link to AWS & GCP, Rezonate Labs has cr
 There are 2 scripts in this repository, both written in Python 3.11.
 You should run them as an authenticated user and have the following dependencies installed:
 
-**GCP:** gcloud cli (which can be downloaded from here https://cloud.google.com/sdk/docs/install ) 
+**GCP:** gcloud cli, which can be downloaded from here - https://cloud.google.com/sdk/docs/install 
+
+
 **AWS:** boto3 python library (which can be installed by executing: pip install boto3)
 
 ## Execution Examples
