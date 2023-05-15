@@ -36,7 +36,7 @@ try:
     print("Searching for OIDC Trust in the account")
     oidc_providers = iam_client.list_open_id_connect_providers()
     if len(oidc_providers) == 0:
-        print("There are no trusted identity provider within the ok.")
+        print("There are no trusted identity provider within the account.")
         exit(0)
     print("Checking if github is trusted")
     found_git = False        
