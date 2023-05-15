@@ -15,5 +15,8 @@ You should run them as an authenticated user and have the following dependencies
 
 ## Execution Examples
 
+**GCP**
+![Example 1]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true))
 
-
+**AWS**
+![Example 1]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/Rezonate-io/github-oidc-checker/blob/main/github-aws-example.png?raw=true))
